@@ -1,1 +1,19 @@
-<p>todo-footer works!</p>
+<!-- This footer should hidden by default and shown when there are todos -->
+<footer class="footer">
+  <!-- This should be `0 items left` by default -->
+  <span class="todo-count"><strong>0</strong> tareas pendientes</span>
+  <!-- Remove this if you don't implement routing -->
+  <ul class="filters">
+    <li>
+      <a class="selected" href="#/">Todas</a>
+    </li>
+    <li>
+      <a href="#/active">Activos</a>
+    </li>
+    <li>
+      <a href="#/completed">Competados</a>
+    </li>
+  </ul>
+  <!-- Hidden if no completed items are left ↓ -->
+  <button class="clear-completed">Limpiar completados</button>
+</footer>
