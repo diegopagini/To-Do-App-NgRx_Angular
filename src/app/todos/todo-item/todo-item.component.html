@@ -5,7 +5,7 @@
 
     <label (dblclick)="editar()">{{ todo.texto }}</label>
 
-    <button class="destroy"></button>
+    <button (click)="borrar()" class="destroy"></button>
   </div>
   <input
     class="edit"

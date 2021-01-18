@@ -22,7 +22,28 @@ const _todoReducer = createReducer(
         return todo;
       }
     });
-  })
+  }),
+  on(actions.editar, (state, { id, texto }) => {
+    return state.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          texto: texto,
+        };
+      } else {
+        return todo;
+      }
+    });
+  }),
+  on(actions.borar, (state, { id }) => state.filter((todo) => todo.id !== id)),
+  on(actions.togleAll, (state, { completado }) =>
+    state.map((todo) => {
+      return {
+        ...todo,
+        completado: completado,
+      };
+    })
+  )
 );
 
 export function todoReducer(state, action) {
