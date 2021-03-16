@@ -8,9 +8,8 @@ describe('TodoPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TodoPageComponent ]
-    })
-    .compileComponents();
+      declarations: [TodoPageComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
