@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  max-width: 70% !important;
+}
+
+@media (max-width: 991px) {
+  body {
+    max-width: 95% !important;
+  }
+}
+
+.todoapp {
+  min-width: 70vw !important;
+  margin: 0 auto;
+}
